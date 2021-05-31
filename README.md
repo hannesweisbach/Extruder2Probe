@@ -1,10 +1,15 @@
 # Extruder2Probe
 Board in stepstick formfactor to attach a PINDA v2 Probe to an empty extruder port
 
-This is part of the modifications of my Sapphire Pro. I wanted to connect a PINDA v2 Z-probe (with temperature sensor). The Sapphire Pro is controlled by an MKS Robin Nano board. The board has a BLTouch connector, which I could have used, where it not for two issues:
+This is part of the modifications of my Sapphire Pro. I wanted to connect a PINDA v2 Z-probe (with temperature sensor). The Sapphire Pro is controlled by an MKS Robin Nano board. 
+
+## Why?
+The board has a BLTouch connector, which I could have used, where it not for two issues:
 
 1. my board runs on 3.3V, so it does not have 5V readily available, which the PINDA v2 needs and
 2. the BLTouch connector does not connect the temperature sensor of the probe.
+
+## How?
 
 I do, however, use only one extruder, which means the socket for the E1 stepper driver board is empty. This means I have:
 
@@ -15,7 +20,13 @@ I do, however, use only one extruder, which means the socket for the E1 stepper 
 
 The STEP pin on the socket is connected to pin PA6 of the STM23F103 SoC, the DIR pin to pin PA1. PA1 can also be an analog input, hence the temperature sensor has to be connected to this pin.
 
+## Details?
+
 The `ÈDA` subdirectory contains schematic and board layout in KiCAD format, as well as a [PDF version of the schematic](https://github.com/hannesweisbach/Extruder2Probe/raw/main/EDA/Probe%20Connector.pdf).
+
+Q1 can either be a BJT or MOSFET. R5 is required if Q1 is a BJT, but optional if Q1 is a FET. D2 in conjunction with R5 keeps the gate voltage of Q1 within 0-5V and also acts as a (rudimentary) ESD protection.
+
+## Pictures?
 
 3D rendering of the board:
 
