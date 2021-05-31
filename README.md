@@ -22,7 +22,7 @@ The STEP pin on the socket is connected to pin PA6 of the STM23F103 SoC, the DIR
 
 ## Details?
 
-The `ÈDA` subdirectory contains schematic and board layout in KiCAD format, as well as a [PDF version of the schematic](https://github.com/hannesweisbach/Extruder2Probe/raw/main/EDA/Probe%20Connector.pdf).
+The `EDA` subdirectory contains schematic and board layout in KiCAD format, as well as a [PDF version of the schematic](https://github.com/hannesweisbach/Extruder2Probe/raw/main/EDA/Probe%20Connector.pdf).
 
 Q1 can either be a BJT or MOSFET. R5 is required if Q1 is a BJT, but optional if Q1 is a FET. D2 in conjunction with R5 keeps the gate voltage of Q1 within 0-5V and also acts as a (rudimentary) ESD protection.
 
