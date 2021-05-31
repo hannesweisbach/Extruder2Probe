@@ -20,3 +20,11 @@ The `ÈDA` subdirectory contains schematic and board layout in KiCAD format, as 
 3D rendering of the board:
 
 ![E2P](https://user-images.githubusercontent.com/5844058/120200544-bff44500-c224-11eb-84ed-829afed264de.jpg)
+
+Board mounted on the MKS Robin Nano:
+
+![IMG_20210531_131301](https://user-images.githubusercontent.com/5844058/120219579-ba562980-c23b-11eb-951f-73cd72e51801.jpg)
+
+With probe attached:
+
+![IMG_20210531_180809](https://user-images.githubusercontent.com/5844058/120219606-c6da8200-c23b-11eb-9f49-a844d41d03b2.jpg)
