@@ -15,7 +15,7 @@ I do, however, use only one extruder, which means the socket for the E1 stepper 
 
 The STEP pin on the socket is connected to pin PA6 of the STM23F103 SoC, the DIR pin to pin PA1. PA1 can also be an analog input, hence the temperature sensor has to be connected to this pin.
 
-The `ÈDA` subdirectory contains schematic and board layout in KiCAD format.
+The `ÈDA` subdirectory contains schematic and board layout in KiCAD format, as well as a [PDF version of the schematic](https://github.com/hannesweisbach/Extruder2Probe/raw/main/EDA/Probe%20Connector.pdf).
 
 3D rendering of the board:
 
